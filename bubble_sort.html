@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>第一次练习</title>
+    <script>
+        // var arr = [5, 4, 3, 2, 1];
+        var arr = [544, 32, 454, 689, 135, 124, 652, 174765, 123, 65, 4236, 789, 65]
+        for (var i = 0; i < arr.length - 1; i++) {
+            for (var j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    var temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
